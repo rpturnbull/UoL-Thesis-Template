@@ -1,0 +1,73 @@
+
+
+\begin{figure}
+\centering     %%% not \center
+\subfigure[Figure A]{\label{fig:a}\includegraphics[width=30mm]{Chapter4/Figs/3.3vfig.eps}}
+\subfigure[Figure B]{\label{fig:b}\includegraphics[width=30mm]{Chapter4/Figs/bacon.jpg}}
+\caption{my caption}
+\end{figure}
+
+\begin{figure} 
+\centering    
+\includegraphics[width=1.0\textwidth]{Chapter4/Figs/3.3vfig.eps}
+\caption[Average sensor drift over 10 minutes for Sensors 1-3]{Average sensor drift over 10 minutes for Sensors 1-3}
+\label{fig:0vfig}
+\end{figure}
+
+
+
+
+\begin{table}[h]
+	\caption{System Specification}
+	\centering
+	\label{table:Spec}
+	\begin{tabular}{p{4cm}p{10cm}}
+		\toprule
+		Area & Optimal Requirement \\ 
+		\midrule
+
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+
+\colorbox{yellow}{#1}
+
+\begingroup
+\renewcommand{\arraystretch}{1.5}
+\begin{spacing}{1.1}
+\begin{longtable}{>{\raggedright}p{2.5cm}>{\raggedright}p{4cm}>{\raggedright}p{2.5cm}>{\raggedright}p{5cm}}
+
+\caption[A summary of the literature review for detection of cracks using computer vision.]{A summary of the review of recent literature that focuses on computer vision for crack detection in photographs. Rows highlighted in grey show research with published datasets. Related projects are marked with *.} \label{tab:CrackDetect} \tabularnewline
+\hline
+\multicolumn{4}{ c }{Literature Summary}\tabularnewline
+\hline
+\textbf{Reference} &  \textbf{Description of approach} & \textbf{Task} &  \textbf{Dataset}  \tabularnewline
+\hline
+\endfirsthead
+
+ \hline
+\multicolumn{4}{c}{Continuation of Table~\ref{tab:CrackDetect}}\tabularnewline
+\hline
+\textbf{Reference} &  \textbf{Description of approach} & \textbf{Task} &  \textbf{Dataset}   \tabularnewline
+%  \textbf{Ref.} &  \textbf{of approach} & 1 & 2   \\
+\hline
+\endhead
+
+ \hline
+\endfoot
+
+ \hline
+%  \multicolumn{4}{ c }{}\tabularnewline
+\hline\hline
+\endlastfoot
+
+\multicolumn{4}{ l }{\textbf{Image processing methods}} \tabularnewline \hline
+\cite{lim2011developing}  & Image processing with Laplacian of Gaussian  & Segment Asphalt     &   N/A       \tabularnewline
+\cite{Su2013} & Image processing with weighted median filter, image opening Otsu's thresholding and measurement of morphological features & Segment Concrete pavement &  Private dataset collected by hand. 50 images with cracks, 50 non-crack. 1536x2048 px resized to 335x413 px \tabularnewline
+\cite{Li2017} &  Multiple image scales using gaussian blurring. Group crack seeds into clusters and use window minimal intensity path algorithm to grow cracks. Cracks matched across image scales. &  Segment. \newline  Asphalt &  Compared results to dataset from~ \cite{Shi2016_crackforest} 480x320  \tabularnewline
+\cite{Nayyeri2018} &  Local structure extraction to preserve strong edges. Followed by binarisation. K-means used to group background texture &  Segment from \newline Concrete and asphalt road surface &  Private dataset of 704 images.   352 for training, 352 for testing, repeated 10 times. \newline 400x500 px \tabularnewline
+\end{longtable}
+\end{spacing}
+\endgroup

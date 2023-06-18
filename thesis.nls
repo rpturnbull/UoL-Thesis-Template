@@ -1,0 +1,40 @@
+
+\begin{thenomenclature} 
+\nomgroup{Z}
+  \item [{$\nu$}]\begingroup Poisson's ratio\nomeqref {7.1}\nompageref{168}
+  \item [{$14DOF-LL$}]\begingroup Fourteen DOFs Lower Limb Exoskeleton\nomeqref {5.0}\nompageref{105}
+  \item [{$16DOF-UL$}]\begingroup Sixteen DOFs Upper Limb Exoskeleton\nomeqref {E.0}\nompageref{299}
+  \item [{$6DOF-LL$}]\begingroup Six DOFs Lower Limb Exoskeleton\nomeqref {5.0}\nompageref{105}
+  \item [{$6DOF-UL$}]\begingroup Six DOFs Upper Limb Exoskeleton\nomeqref {E.0}\nompageref{299}
+  \item [{$ADL$}]\begingroup Activity of Daily Living\nomeqref {2.0}\nompageref{22}
+  \item [{$AOI$}]\begingroup Area of Interest\nomeqref {5.0}\nompageref{121}
+  \item [{$AoI$}]\begingroup Area of Interest\nomeqref {4.0}\nompageref{60}
+  \item [{$C^{*}$}]\begingroup Effective Dissipation Coefficient\nomeqref {7.0}\nompageref{167}
+  \item [{$cHRI$}]\begingroup cognitive Human-Robot Interaction/Interface\nomeqref {2.0}\nompageref{27}
+  \item [{$CMA-ES$}]\begingroup Covariance Matrix Adaptation Evolution Strategy\nomeqref {2.0}\nompageref{34}
+  \item [{$CoF$}]\begingroup Coefficient of Friction\nomeqref {5.0}\nompageref{120}
+  \item [{$CoT$}]\begingroup Cost of Transport\nomeqref {8.0}\nompageref{210}
+  \item [{$CSA$}]\begingroup Cross-sectional Area\nomeqref {2.0}\nompageref{38}
+  \item [{$DOF$}]\begingroup Degrees of Freedom\nomeqref {1.0}\nompageref{2}
+  \item [{$E^{*}$}]\begingroup Composite Elastic Modulus\nomeqref {7.0}\nompageref{167}
+  \item [{$EMG$}]\begingroup Electromyography\nomeqref {2.0}\nompageref{29}
+  \item [{$FSR$}]\begingroup Force Sensitive Resistor\nomeqref {2.0}\nompageref{35}
+  \item [{$GRF$}]\begingroup Ground Reaction Force\nomeqref {8.0}\nompageref{212}
+  \item [{$HCF$}]\begingroup Hunt-Crossley Force\nomeqref {7.0}\nompageref{164}
+  \item [{$HRI$}]\begingroup Human Robot Interaction\nomeqref {1.0}\nompageref{1}
+  \item [{$hyfydy$}]\begingroup High Fidelity Dynamics Physics Engine\nomeqref {2.0}\nompageref{34}
+  \item [{$IMUs$}]\begingroup Inertial Measurement Units\nomeqref {2.0}\nompageref{29}
+  \item [{$JBI$}]\begingroup Joint Based Interaction\nomeqref {7.12}\nompageref{184}
+  \item [{$EFF$}]\begingroup modified Elastic Foundation Force\nomeqref {7.0}\nompageref{164}
+  \item [{$MOCO$}]\begingroup OpenSim MOtion and COntrol optimiser\nomeqref {2.0}\nompageref{33}
+  \item [{$MR$}]\begingroup Measuring Resistor\nomeqref {4.0}\nompageref{66}
+  \item [{$NormSD$}]\begingroup Normalised Standard Deviation\nomeqref {7.12}\nompageref{193}
+  \item [{$nRMSE$}]\begingroup Normalised Root Mean Square Error\nomeqref {4.2}\nompageref{91}
+  \item [{$PCB$}]\begingroup Printed Circuit Board\nomeqref {4.0}\nompageref{68}
+  \item [{$pHRI$}]\begingroup physical Human Robot Interface\nomeqref {1.0}\nompageref{1}
+  \item [{$RMSE$}]\begingroup Root Mean Square Error\nomeqref {8.0}\nompageref{211}
+  \item [{$ROM$}]\begingroup Range of Motion\nomeqref {1.0}\nompageref{5}
+  \item [{$SCONE$}]\begingroup Simulated Controller OptimizatioN Environment\nomeqref {2.0}\nompageref{33}
+  \item [{$SID$}]\begingroup Specification Identifier\nomeqref {4.0}\nompageref{63}
+
+\end{thenomenclature}

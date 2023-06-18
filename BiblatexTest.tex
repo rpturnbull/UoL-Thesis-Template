@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\usepackage[sorting=none]{biblatex}
+
+\usepackage{filecontents}
+
+\begin{filecontents}{\jobname.bib}
+	@misc{A01,
+		author = {Author, A.},
+		year = {2001},
+		title = {Alpha},
+	}
+	@misc{B02,
+		author = {Buthor, B.},
+		year = {2002},
+		title = {Bravo},
+	}
+\end{filecontents}
+
+\addbibresource{\jobname.bib}
+
+\begin{document}
+	
+	\listoffigures
+	
+	\section{foo}
+	
+	Some text \autocite{B02}.
+	
+	\begin{figure}[!h]
+		\centering
+		\rule{1cm}{1cm}
+		\caption{A figure \autocite{A01}}
+	\end{figure}
+	
+	\printbibliography
+	
+\end{document}

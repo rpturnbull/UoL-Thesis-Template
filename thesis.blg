@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: TitlePage/titlepage.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: Dedication/dedication.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: Declaration/declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: Acknowledgement/acknowledgement.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Abstract/abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter1/chapter1.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Chapter2/chapter2.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: ChapterN/chapterN.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: Appendix1/appendix1.aux
+Database file #1: References/library.bib
+You've used 5 entries,
+            1791 wiz_defined-function locations,
+            492 strings with 4808 characters,
+and the built_in function-call counts, 1132 in all, are:
+= -- 102
+> -- 54
+< -- 1
++ -- 20
+- -- 15
+* -- 79
+:= -- 192
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 49
+empty$ -- 99
+format.name$ -- 15
+if$ -- 243
+int.to.chr$ -- 0
+int.to.str$ -- 5
+missing$ -- 4
+newline$ -- 28
+num.names$ -- 5
+pop$ -- 9
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 25
+stack$ -- 0
+substring$ -- 68
+swap$ -- 12
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 12
+width$ -- 6
+write$ -- 57

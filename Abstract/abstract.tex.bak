@@ -1,0 +1,25 @@
+% ************************** Thesis Abstract *****************************
+% Use `abstract' as an option in the document class to print only the titlepage and the abstract.
+
+% max 300 words- did 388
+
+\begin{abstract}
+Exoskeletons are external structures with joints and links corresponding to the human body. The exoskeleton transfers force to the human body to assist, enhance, or rehabilitate the user. Exoskeletons and the human body create a bi-directional system built up of multiple interaction layers.
+
+At the core of exoskeleton design is cognitive and physical interaction, forming human-robot interaction. Cognitive interaction involves control system user intent detection and how the user interprets information from the exoskeleton. Physical interaction concerns the transmission of power to the user. The physical interface is affected by several factors such as soft tissue movement, joint misalignment, and robot inertia. It is postulated that improving exoskeleton-user attachment can improve system efficiency and user comfort.
+
+A drawback of current exoskeleton design is a lack of consideration for the human aspect of human-exoskeleton interaction, through simplification to kinematic design and system contact points. Limited work exists on human-exoskeleton interaction focusing on the effect on the human, aside from metabolic output.
+
+This research assesses how exoskeleton design influences the user, focusing on the physical human-robot interface and how exoskeletons are attached. Modular passive lower exoskeleton systems were developed for assessing human-robot interaction. For each body region, two device levels were designed. The first conformed to common simplifications made to human anatomy when replicated in exoskeleton joints resulting in a minimalist design. The second sought to balance the number of degrees of freedom in exoskeleton joints with system simplicity, using only those required for full user mobility. Passive systems were developed to highlight the effect of exoskeleton impedance on the user. A novel sleeve-based attachment system is proposed in conjunction with traditional cuff-based attachment systems. Multiple design elements were taken through an iterative process before a final design was reached.
+
+A flexible force tracking array was developed for placement within the human-exoskeleton interface. Following the identification of force requirements, force-sensitive resistors (FSR406) were selected. Prototype design integrated the sensors in attachment cuffs; however, the final design implemented soft sensing sleeves capable of assessing multiple attachment methodologies. 
+
+Preliminary work suggested that the kinematic constraints of the simplified joints resulted in greater interaction forces. With a higher degree of freedom, the system reduces forces by 1.3N. Proof of concept attachment sleeve testing showed a reduction of 4.7N compared to the cuff.
+
+Due to the extensive testing required to assess all possible attachment scenarios, an in-silico model was developed. Several modes of interface modelling were explored, ultimately selecting a linear spring-damper system to represent soft tissue interaction between human and exoskeleton. The model structure supports closed kinematic chains within the simulation environment, a fundamental requirement when investigating exoskeleton design. The model set out provides a promising and novel method for investigating human-exoskeleton interaction and exoskeleton performance assessment. Model validation was completed against human gait trials, achieving an accuracy of 70\% against the flexible force tracking system. The response ranges align with those documented in the academic literature.  Given soft tissue's non-linear viscoelastic properties, the related simplifications made, and agreement with the literature, the accuracy was deemed acceptable. 
+
+The biomechanically accurate model was driven by muscle excitation through a forward-shooting optimisation control, driving a novel approach to attachment assessment. This research found no clear link between knee alignment and joint load. A higher density of shank attachment points is beneficial to overall exoskeleton stability. Thigh attachment configuration had no apparent effect on performance, giving researchers more freedom in the thigh attachment. Increasing the exoskeleton joint degrees of freedom (additional pelvis-exoskeleton joint) greatly affected shank normal and shear forces, highlighting the influence of exoskeleton joint kinematics on human-robot interaction and the need for its consideration in future human-centred design.
+
+
+
+\end{abstract}

@@ -1,0 +1,53 @@
+%!TEX root = ../thesis.tex
+% ******************************* Thesis Appendix A ****************************
+
+\chapter{Appendix Example} \label{App:Appendix1}
+
+
+I am an appendix. Add stuff here that is important but also not that important. Like code.
+
+\begin{lstlisting}[language=Python, caption= Original measures included for gait control optimisation in SCONE base model, label= Code:OriginalMeasures]
+	# Overall composite measure
+	CompositeMeasure {
+		# Measure for gait, minimum speed = 1.0 m/s
+		GaitMeasure {
+			name = Gait
+			weight = 100
+			threshold = 0.05
+			termination_height = 0.85
+			min_velocity = 1.0
+		}
+		# Metabolic energy measure as defined in [Wang et al. 2012]
+		EffortMeasure {
+			name = Effort
+			weight = 5
+			measure_type = Wang2012
+			use_cost_of_transport = 1
+		}
+		# Degree of Freedom composite measure
+		CompositeMeasure {
+			name = DofLimits
+			symmetric = 1
+			# Stops ankle hyper extension
+			DofMeasure {    
+				weight = 0.1
+				dof = ankle_angle
+				position { min = -60 max = 60 squared_penalty = 1 }
+			}
+			# Stops knee hyper extension
+			DofMeasure { 		
+				weight = 0.01
+				threshold = 5
+				dof = knee_angle
+				force { min = 0 max = 0 abs_penalty = 1 }
+			}	
+			# Ground reaction force measure
+			ReactionForceMeasure {
+				name = GRF
+				start_time = 1
+				weight = 10
+				max = 1.4
+				abs_penalty = 1
+			}	
+		}	
+	\end{lstlisting}

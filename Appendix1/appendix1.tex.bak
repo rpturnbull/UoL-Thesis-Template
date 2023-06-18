@@ -1,0 +1,7 @@
+%!TEX root = ../thesis.tex
+% ******************************* Thesis Appendix A ****************************
+
+\chapter{Appendix Example} \label{App:Appendix1}
+
+
+I am an appendix. Add stuff here that is important but also not that important.
