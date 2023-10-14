@@ -14,13 +14,13 @@
 % Ragged bottom avoids extra whitespaces between paragraphs
 \raggedbottom
 % To remove the excess top spacing for enumeration, list and description
-%\usepackage{enumitem}
-%\setlist[enumerate,itemize,description]{topsep=0em}
+\usepackage{enumitem}
+\setlist[enumerate,itemize,description]{topsep=0em}
 
 % *****************************************************************************
 % ******************* Fonts (like different typewriter fonts etc.)*************
 
-%\usepackage{gillius2}
+\usepackage{gillius2}
 %https://www.fonts.com/font/monotype/gill-sans/1-volume
 
 % Add `customfont' in the document class option to use this section
@@ -69,18 +69,14 @@
 }
 
 % *************************** Graphics and figures *****************************
+% See examples figures for all uses
 
-\usepackage{rotating}
+\usepackage{rotating} % use this package for landscape figures
 \usepackage{wrapfig}
-\usepackage{svg}
-\usepackage{amsmath} % maths
-\usepackage{xfrac} % Fractions 
-\usepackage{graphicx,caption} %subfig Figures
-\usepackage[export]{adjustbox}
-
-\usepackage{subfigure}
-\usepackage{gensymb}
-\usepackage{colortbl}
+\usepackage{svg} % add the ability to use .svg image format
+\usepackage{graphicx,caption} % lets you add images for figures
+\usepackage[export]{adjustbox} % allows the use of \include graphics in combination with above
+\usepackage{subfigure} % allows the production of subfigures 
 \usepackage[section]{placeins} % to automatically ensure floats do not go into the next section.
 % above allow you to use \FloatBarrier to prevent floats appearing beyond the point in the document
 
@@ -98,15 +94,16 @@
 
 
 % ********************************** Tables ************************************
-\usepackage{booktabs} % For professional looking tables
-\usepackage{multirow}
-\usepackage{rotating}
-\usepackage{float}
+% See examples tables for all uses
 
-\usepackage{multicol}
-\usepackage{longtable}
-\usepackage{tabularx}
-\usepackage{lscape}
+\usepackage{booktabs} % For professional looking tables
+\usepackage{multirow} % Merging rows
+\usepackage{float}
+\usepackage{colortbl} % The package allows rows and columns to be coloured, and even individual cells
+\usepackage{multicol} % merging columns
+\usepackage{longtable} % adjusts table scale to fit page
+\usepackage{tabularx} % lets you set column width
+\usepackage{lscape} % allows landscapetable
 
 \usepackage{array}
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}} % set column values to centre 
@@ -115,7 +112,6 @@
 % *********************************** Code/Listings *********************************
 
 \usepackage{listings} % For code
-\usepackage{xcolor} % Enables highlighting parts of text
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -147,8 +143,10 @@
 \usepackage{siunitx} % use this package module for SI units
 
 
-% *********************************** Other Packages *********************************
-
+% *********************************** Maths *********************************
+\usepackage{gensymb} % Generic symbols for both text and math modes
+\usepackage{amsmath} % improved maths
+\usepackage{xfrac} % Fractions 
 
 
 
@@ -163,6 +161,8 @@
 
 
 % ************************ Formatting / Footnote *******************************
+\usepackage{xcolor} % Enables highlighting parts of text
+\usepackage{enumitem}
 
 % Don't break enumeration (etc.) across pages in an ugly manner (default 10000)
 %\clubpenalty=500
@@ -246,16 +246,12 @@
 % ******************************** Todo Notes **********************************
 %% Uncomment the following lines to have todonotes.
 
-\ifsetDraft
-	\usepackage[colorinlistoftodos]{todonotes}
-	\newcommand{\mynote}[1]{\todo[author=kks32,size=\small,inline,color=green!40]{#1}}
-\else
-	\newcommand{\mynote}[1]{}
-	\newcommand{\listoftodos}{}
-\fi
+%\ifsetDraft
+%	\usepackage[colorinlistoftodos]{todonotes}
+%	\newcommand{\mynote}[1]{\todo[author=kks32,size=\small,inline,color=green!40]{#1}}
+%\else
+%	\newcommand{\mynote}[1]{}
+%	\newcommand{\listoftodos}{}
+%\fi
 
 % Example todo: \mynote{Hey! I have a note}
-
-% *****************************************************************************
-% ******************* Better enumeration my MB*************
-\usepackage{enumitem}

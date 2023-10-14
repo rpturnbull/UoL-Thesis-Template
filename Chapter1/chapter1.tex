@@ -6,16 +6,15 @@
 \chapter{Introduction}
 
 
-%*****************************Definition of Exoskeletons************************
 \section{Background}\label{ref:background}
-%What's your research
-%Why are you doing this
-%what have others done before you
-%how and what do you add to it
-%How will all of it benefit the field
-%Point the reader towards the conclusion 
+What's your research//
+Why are you doing this//
+what have others done before you//
+how and what do you add to it//
+How will all of it benefit the field//
+Point the reader towards the conclusion //
 
-%Explains thesis to someone who won't read the whole thing
+Explains thesis to someone who won't read the whole thing//
 
 First off explain stuff like Human Robot Interaction (HRI) then add to nomenclature in the code and it will show up when you compile
 
@@ -29,13 +28,22 @@ Next make a list of things. This can be bullet points or numbers
 	\item[] More things
 \end{itemize}
 
+\section{Example Figures}
 
+you can either set the width mannually (width=120mm) or you can set it relative to textwidth (width=1.2/textwidth)
+
+\begin{figure} [ht]
+	\centering    
+	\includegraphics[width=120mm]{Chapter1/Figs/subfolder/dont-panic.png}
+	\caption[Regular figure]{Regular figure}
+	\label{fig:Scope}
+\end{figure}
 
 \begin{landscape}
 	\begin{figure} 
 		\centering    
 		\includegraphics[width=1.2\textwidth]{Chapter1/Figs/dont-panic.png}
-		\caption[This bit of text goes at the list of figures so might be slightly different.]{Example figure but landscape.}
+		\caption[This bit of text goes in the list of figures so might be slightly different.]{Example figure but landscape.}
 		\label{fig:exoflow}
 	\end{figure}
 \end{landscape}
@@ -57,45 +65,37 @@ Cite a person using bibtex, you can get menedeley to export your whole library \
 
 
 
-\section{Motivation for Research} \label{Attachment} % label if you want to cross reference section else where
+\section{Motivation for Research} \label{Attachment} 
+
+Use a label (in code) if you want to cross reference section elsewhere
 
 
 \section{Aims and Objectives}
 
+
+\subsection{Aims}
+
 nice numerical list
 
 \begin{enumerate}
-	\item Where is the optimal contact position for the attachment of an assistive robotic exoskeleton to the limbs of the end user?
-	\item How does the attachment location contribute to exoskeleton-human joint alignment?
-	\item What is the relationship between attachment position and user metabolic expenditure?
+	\item Highlight figure examples?
+	\item Highlight citations, cross referencing and lists?
 \end{enumerate}
-
-\subsection{Aims}
 
 \subsection{Objectives}
 
 \begin{enumerate}
-	% Lower body 
 	\item Things
-	
 	\item Stuff
-	
-	% \item more
-
 \end{enumerate}
 
 
 
 \section{Project Scope}
 
- \textit{italic text}  
+ \textit{italic text}  and now in \textb{BOLD}
  
-\begin{figure} [ht]
-	\centering    
-	\includegraphics[width=120mm]{Chapter1/Figs/subfolder/dont-panic.png}
-	\caption[Project scope flow diagram with areas of interest highlighted in red]{Project scope flow diagram with areas of interest highlighted in red}
-	\label{fig:Scope}
-\end{figure}
+
 
 
 
@@ -111,13 +111,15 @@ nice numerical list
 
 sometimes paragraph look better to break up formatting
 
-\paragraph{Chapter 2: Literature Review -} 
+\paragraph{Chapter 2: Literature Review -} I read some things about what other people did. Here is what I think about it.
 
-\paragraph{Chapter 3: Name -}
+\paragraph{Chapter 3: Method -} I thought about it and decided this was how I would tackle the problem.
 
-\paragraph{Chapter 4: Name -} 
+\paragraph{Chapter 4: Preliminary Results -} I did some work to inform the design. It wasn't very good. 
 
-\paragraph{Chapter 5: Name -}
+\paragraph{Chapter 5: Design -} I built a thing and reviewed it.
+
+\paragraph{Chapter 5: Results -} Used used the thing I built to test the thing I was interested in. This is how it went.
 
 \paragraph{Chapter N: Summary, Conclusions and Future Work -}  This chapter summarises the work conducted during this research. Discusses simulations result implications and how they compare to the preliminary work and literature. The conclusions made from this work and finally recommendations for the further development of the work are set out.
 

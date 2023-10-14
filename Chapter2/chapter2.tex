@@ -11,11 +11,46 @@
 \section{Introduction}
  90\textdegree 
  
- nice big sideways table
-\begin{sidewaystable}
-	\caption[Shoulder, clavicle, elbow, wrist, hand, spine, hip, knee, ankle and foot Degrees of Freedom and Range of Motion. * Where a DOF exists due to joint structure, but the movement has not quantified been quantified in the literature]{Shoulder, clavicle, elbow, wrist, hand, spine, hip, knee, ankle and foot Degrees of Freedom and Range of Motion. * Where a DOF exists due to joint structure, but the movement has not quantified been quantified in the literature}
+ This is what a table looks like, easiest to build them as you want in excel then put the \& symbols in. A basic table example (Table \ref{table:basicTable}) or a more complex table (\ref{table:exampleTable}).
+ 
+\begin{table} 
+\caption[Basic Table.]{Basic Table.}
 	\centering
-	\label{table:body_nat_dof}
+	\label{table:basicTable}
+	\begin{tabular}{c c c c c c}
+	\multirow{2}{*}{multirow} &    \multicolumn{4}{c}{multicolumn} & single col \\
+							  & Sub part & part B & Part C & Part D & end cell \\ \midrule
+		Empty row			  &		     &        &			&		&	\\
+			\color{green}		& & & & & \\		  
+							  
+		\toprule
+	\end{tabular}}
+\end{table}   
+
+\begin{table}
+	\caption[Summary of pressure experienced at the physical human-robot interface, including comfort levels and capillary compression pressure.]{Summary of pressure experienced at the physical human-robot interface, including comfort levels and capillary compression pressure.}
+	\centering
+	\label{table:exampleTable}
+	\resizebox{\textwidth}{!}{
+	\begin{tabular}{c c c c c c}
+		\toprule
+		     \multirow{2}{*}{Reference}       &          \multicolumn{4}{c}{Pressure [kPa]}           & \multirow{2}{*}{Conditions}             \\
+		                                      & Comfortable & Discomfort  & Damage      & Pain        &                                         \\ \midrule
+		Schiele et al. \cite{Schiele2008afut} & 1.3-4       & >4          & \textendash & \textendash & While completing tasks                  \\ % 10-30mmHg
+		Kermavnar et al. \cite{Kermavnar2020} & <14.1       & 14.1-27.5   & \textendash & 43.4-60.3   & Dynamic loading over short periods      \\ % Kermavnar2020 discomfort 14.1 - 27.5 kPa pain 43.4 - 60.3 kPa - 21 participants
+		     Ryan et al. \cite{Ryan1989}      & \textendash & \textendash & 4-4.7       & \textendash & Capillaries occlusion  - minimum stress \\
+		      Cho et al. \cite{Cho2012}       & \textendash & \textendash & 9           & \textendash & Injury possible from                    \\ % Ryan et al. 1989 - from Cho 2012 Min stress for harm 4-4.7kPa almost 9kPa for dermalogical damage
+		    Agam et al. \cite{Agam2008a}      & \textendash & \textendash & >6.27       & \textendash & Average capillary pressure              \\ \bottomrule
+	\end{tabular}}
+\end{table}   
+ 
+  
+ nice big sideways table (\ref{table:sidewaysexample})
+ 
+\begin{sidewaystable}
+	\caption[this bit goes in the list of tables]{Caption for you sideways table}
+	\centering
+	\label{table:sidewaysexample}
 	\resizebox{\textwidth}{!}{
 		\begin{tabular}{l c c c c c c c c c c c}
 			\toprule
@@ -49,34 +84,8 @@
 \end{sidewaystable}
 
 
-\begin{itemize}
-	\item \textbf{Body -} The simulations bones and links. They are defined by relating the position of a joint relative to a parent and child body. Where the body being inserted is the child body.
-	\item \textbf{Joint -} Used to connect two bodies. A joint is specified when inserting a new body. Joint types selection depends on the desired functionality.
-	\item \textbf{Geometry -} Used as interaction objects or simply providing body visualisation. 
-\end{itemize}
-
 \nomenclature[z-moco]{$MOCO$}{OpenSim MOtion and COntrol optimiser}
 \nomenclature[z-scone]{$SCONE$}{Simulated Controller OptimizatioN Environment}
-
-This is what a table looks like, easiest to build them as you want in excel then put the \& symbols in. Refere to a table like this: Table \ref{table:HRI_Force}
-
-\begin{table}
-	\caption[Summary of pressure experienced at the physical human-robot interface, including comfort levels and capillary compression pressure.]{Summary of pressure experienced at the physical human-robot interface, including comfort levels and capillary compression pressure.}
-	\centering
-	\label{table:HRI_Force}
-	\resizebox{\textwidth}{!}{
-	\begin{tabular}{c c c c c c}
-		\toprule
-		     \multirow{2}{*}{Reference}       &          \multicolumn{4}{c}{Pressure [kPa]}           & \multirow{2}{*}{Conditions}             \\
-		                                      & Comfortable & Discomfort  & Damage      & Pain        &                                         \\ \midrule
-		Schiele et al. \cite{Schiele2008afut} & 1.3-4       & >4          & \textendash & \textendash & While completing tasks                  \\ % 10-30mmHg
-		Kermavnar et al. \cite{Kermavnar2020} & <14.1       & 14.1-27.5   & \textendash & 43.4-60.3   & Dynamic loading over short periods      \\ % Kermavnar2020 discomfort 14.1 - 27.5 kPa pain 43.4 - 60.3 kPa - 21 participants
-		     Ryan et al. \cite{Ryan1989}      & \textendash & \textendash & 4-4.7       & \textendash & Capillaries occlusion  - minimum stress \\
-		      Cho et al. \cite{Cho2012}       & \textendash & \textendash & 9           & \textendash & Injury possible from                    \\ % Ryan et al. 1989 - from Cho 2012 Min stress for harm 4-4.7kPa almost 9kPa for dermalogical damage
-		    Agam et al. \cite{Agam2008a}      & \textendash & \textendash & >6.27       & \textendash & Average capillary pressure              \\ \bottomrule
-	\end{tabular}}
-\end{table}   
-
 
 
 Maths equations (Equation \ref{eq:adjMod})
